@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajio Shoppy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="ajio-icon" src="data:image/png;base64,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" alt="ajio icon">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">MEN</a>
+                </li>
+                <li>
+                    <a href="#">WOMEN</a>
+                </li>
+                <li>
+                    <a href="#">KIDS</a>
+                </li>
+                <li>
+                    <a href="#">BEAUTY</a>
+                </li>
+                <li>
+                    <a href="#">HOME AND KITCHEN</a>
+                </li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Search AJIO">
+                <button type="submit"><img class="search-btn" src="https://static.thenounproject.com/png/856433-200.png" alt="search button"></button>
+            </div>
+            <!-- <a href="#"><img class="wishlist" src="https://assets.ajio.com/static/img/wishlistIcon.svg" alt="wishlist"></a>
+            <a href="#"><img class="cart" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIByQOUk9P0ENmAA4sMYsGSL61c426ZZaLRyxTA8Qinm-gpVU5" alt="cart"></a> -->
+            <img class="wishlist" src="https://assets.ajio.com/static/img/wishlistIcon.svg" alt="wishlist">
+            <img class="cart" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIByQOUk9P0ENmAA4sMYsGSL61c426ZZaLRyxTA8Qinm-gpVU5" alt="cart">
+        </nav>
+    </header>
+    <div class="images">
+        <div class="image">
+            <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-02082024-MainBanner-Z1-P1-%20Without%20Sponsored-new.gif" alt="img1">
+        </div>
+        <div class="image">
+            <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-05042024-bankoffers-Z1-5instant-prepaid.jpg" alt="img2">
+        </div>
+    </div>
+    <div class="container">
+        <div class="products">
+            <div class="product">
+                <a href="#">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240702/OLtw/6683d9491d763220faa2bf26/-473Wx593H-443040109-darkblue-MODEL.jpg" alt="dress1">
+                    <div class="product-info">
+                        <h4>SVRNAA</h4>
+                        <p>Denim A-Line Dress</p>
+                        <p class="price">MRP ₹2,299</p>
+                        <button class="btn" type="submit">Add to Cart</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240726/QV8f/66a345af1d763220fa33aebf/-473Wx593H-443048868-olive-MODEL.jpg" alt="dress2">
+                    <div class="product-info">
+                        <h4>FIG</h4>
+                        <p>Women Shirt Dress with Belt</p>
+                        <p class="price">MRP ₹1,299</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240628/tB6y/667ecb3f1d763220fa6bed8e/-473Wx593H-443031158-offwhite-MODEL.jpg" alt="dress3">
+                    <div class="product-info">
+                        <h4>SVRNAA</h4>
+                        <p>Floral Print Tiered Hem Dress</p>
+                        <p class="price">MRP ₹2,299</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240314/8OOl/65f3279616fd2c6e6a5d98e6/-473Wx593H-442529732-offwhite-MODEL.jpg" alt="dress4">
+                    <div class="product-info">
+                        <h4>YOUSTA</h4>
+                        <p>Women Straight Kurta with Embroidered Yoke</p>
+                        <p class="price">MRP ₹499</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240730/xdTo/66a8dd481d763220fa4cdd0a/-473Wx593H-443040584-offwhite-MODEL.jpg" alt="dress5">
+                    <div class="product-info">
+                        <h4>AVAASA MIX N' MATCH</h4>
+                        <p>Women Printed Straight Kurta</p>
+                        <p class="price">MRP ₹499</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240410/8l8m/66167dfc05ac7d77bb01533f/-473Wx593H-442599755-mustard-MODEL.jpg" alt="dress6">
+                    <div class="product-info">
+                        <h4>YOUSTA</h4>
+                        <p>Women Printed High-Low Straight Kurta</p>
+                        <p class="price">MRP ₹499</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240726/NFuZ/66a352691d763220fa350f7b/-473Wx593H-443041128-ltbeige-MODEL.jpg" alt="dress7">
+                    <div class="product-info">
+                        <h4>RIO BASIC</h4>
+                        <p>Women Regular Fit Cotton Crew-Neck T-Shirt</p>
+                        <p class="price">MRP ₹249</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240621/KhB4/667549281d763220fae9c1cc/-473Wx593H-443043597-pink-MODEL.jpg" alt="dress8">
+                    <div class="product-info">
+                        <h4>OUTRYT</h4>
+                        <p>Women Graphic Print Oversized Round-Neck T-Shirt</p>
+                        <p class="price">MRP ₹799</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </a>
+            </div>
+            <div class="product">
+                <a href="#">
+                    <img src="https://assets.ajio.com/medias/sys_master/root/20240701/UdcT/66827f366f60443f3115554f/-473Wx593H-443044620-white-MODEL.jpg" alt="dress9">
+                    <div class="product-info">
+                        <h4>OUTRYT</h4>
+                        <p>Women Graphic Print Oversized Round-Neck T-Shirt</p>
+                        <p class="price">MRP ₹699</p>
+                        <button class="btn">Add to Cart</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
